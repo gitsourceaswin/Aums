@@ -316,21 +316,24 @@ a.forgot {
     }
 
     .container2 {
+        width: 60%;
         grid-template-columns: 50% 50%;
         grid-template-areas: "signup design";
     }
 
-    .logo{
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        height: 6%;
-        }
+
         
     .signup .logo{
-        position: absolute;
-        top: 25px;
-        left: 1px;
+        position: relative;
+        top: 0px;
+        margin: 0px 0px 20px 0px;
+        height: 6%;
+        }
+
+    .login .logo{
+        position: relative;
+        top: 0px;
+        margin: 0px 0px 10px 0px;
         height: 6%;
         }
 
