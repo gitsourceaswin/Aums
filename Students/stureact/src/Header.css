@@ -1,0 +1,127 @@
+/* Header.css */
+.header {
+  width: 100%;
+  background-color: #A4123F;
+  color: #fff;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Align items to the right end */
+  align-items: center;
+}
+
+.nav-list {
+  padding: 10px;
+  background: none;
+  color: #fff;
+  font-family: 'Kanit', sans-serif;
+  font-size: large;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; /* Align items to the right end */
+  margin-right: 20px; /* Adjust margin to provide space */
+}
+
+.nav-list.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 65px;
+  left: 0;
+  width: 200px;
+  background-color: #A4123F;
+  padding: 10px;
+}
+
+.nav-list.active li {
+  margin: 10px;
+}
+
+.nav-list li {
+  display: inline-flex;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: large;
+  margin-left: 20px;
+  font-family: 'Kanit', sans-serif;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #A4123F;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 28px;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.header-button {
+  padding: 10px;
+  margin-left: 20px;
+  color: #fff;
+  background: none;
+  font-family: 'Kanit', sans-serif;
+  font-size: large;
+  border: none;
+  transition: transform 0.3s ease; 
+  cursor: pointer;
+}
+
+.header-button:hover, .header-button:focus {
+  cursor: pointer;
+  border-bottom-style: solid;
+}
+
+.menu-icon {
+  display: none;
+  color: #fff;
+  font-size: large;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav-list.active {
+    display: flex;
+  }
+  
+  .menu-icon {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 20px; /* Adjust margin to provide space */
+  }
+  
+}
